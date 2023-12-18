@@ -1,0 +1,586 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red21\green23\blue26;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c10588\c12157\c13725;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 1) \cf2 \cb3 \expnd0\expndtw0\kerning0
+\uc0\u1047 \u1072 \u1081 \u1090 \u1080  \u1074  \u1076 \u1086 \u1084 \u1072 \u1096 \u1085 \u1102 \u1102  \u1076 \u1080 \u1088 \u1077 \u1082 \u1090 \u1086 \u1088 \u1080 \u1102 
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ cd\
+
+\f0\b 2) \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1087 \u1072 \u1087 \u1082 \u1091  test 3
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ mkdir test3\
+
+\f0\b 3) \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1074  \u1087 \u1072 \u1087 \u1082 \u1091  test 3 \u1090 \u1088 \u1080  \u1092 \u1072 \u1081 \u1083 \u1072  4, 5 \u1080  6, \u1074  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084  \u1080 \u1079  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1076 \u1086 \u1083 \u1078 \u1085 \u1086  \u1073 \u1099 \u1090 \u1100  \u1087 \u1086  4 \u1089 \u1090 \u1088 \u1086 \u1082 \u1080  row1, row2, row3, row4
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ cd test3\
+Alenas-Air:test3 alenaarovikova$ touch 4.txt\
+Alenas-Air:test3 alenaarovikova$ touch 5.txt\
+Alenas-Air:test3 alenaarovikova$ touch 6.txt\
+Alenas-Air:test3 alenaarovikova$ echo row1 >> 4.txt\
+Alenas-Air:test3 alenaarovikova$ echo row2 >> 4.txt\
+Alenas-Air:test3 alenaarovikova$ echo row3 >> 4.txt\
+Alenas-Air:test3 alenaarovikova$ echo row4 >> 4.txt\
+Alenas-Air:test3 alenaarovikova$ echo row1 >> 5.txt\
+Alenas-Air:test3 alenaarovikova$ echo row2 >> 5.txt\
+Alenas-Air:test3 alenaarovikova$ echo row3 >> 5.txt\
+Alenas-Air:test3 alenaarovikova$ echo row4 >> 5.txt\
+Alenas-Air:test3 alenaarovikova$ echo row1 >> 6.txt\
+Alenas-Air:test3 alenaarovikova$ echo row2 >> 6.txt\
+Alenas-Air:test3 alenaarovikova$ echo row3 >> 6.txt\
+Alenas-Air:test3 alenaarovikova$ echo row4 >> 6.txt\
+
+\f0\b 4)\uc0\u1053 \u1072 \u1081 \u1076 \u1080 \u1090 \u1077  \u1089 \u1090 \u1088 \u1086 \u1082 \u1091  row2 \u1074  \u1092 \u1072 \u1081 \u1083 \u1077  5
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ grep "row2" 5.txt\
+row2\
+
+\f0\b 5) \uc0\u1053 \u1072 \u1081 \u1076 \u1080 \u1090 \u1077  \u1089 \u1090 \u1088 \u1086 \u1082 \u1091  row \u1074  \u1087 \u1072 \u1087 \u1082 \u1077  test3
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ cd ..\
+Alenas-Air:~ alenaarovikova$ grep "row" test3/*\
+test3/4.txt:row1\
+test3/4.txt:row2\
+test3/4.txt:row3\
+test3/4.txt:row4\
+test3/5.txt:row1\
+test3/5.txt:row2\
+test3/5.txt:row3\
+test3/5.txt:row4\
+test3/6.txt:row1\
+test3/6.txt:row2\
+test3/6.txt:row3\
+test3/6.txt:row4\
+
+\f0\b 6) \uc0\u1055 \u1086 \u1089 \u1095 \u1080 \u1090 \u1072 \u1081 \u1090 \u1077  \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1089 \u1090 \u1088 \u1086 \u1082  \u1089  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1084 \u1099 \u1084  row \u1074  \u1092 \u1072 \u1081 \u1083 \u1077  6
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ cd test3\
+Alenas-Air:test3 alenaarovikova$ grep -c "row" 6.txt\
+4\
+
+\f0\b 7) \uc0\u1053 \u1072 \u1081 \u1076 \u1080 \u1090 \u1077  \u1092 \u1072 \u1081 \u1083  5 \u1074 \u1085 \u1091 \u1090 \u1088 \u1080  \u1087 \u1072 \u1087 \u1082 \u1080  test3
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ find test3 -name "5.txt"\
+test3/5.txt\
+
+\f0\b 8) \uc0\u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1082 \u1086 \u1084 \u1072 \u1085 \u1076 \u1091  find, \u1091 \u1076 \u1072 \u1083 \u1080 \u1090 \u1077  \u1092 \u1072 \u1081 \u1083  5
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ find test3 -name "5.txt" -delete\
+
+\f0\b 9) \uc0\u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1082 \u1086 \u1084 \u1072 \u1085 \u1076 \u1091  echo, \u1076 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1089 \u1083 \u1086 \u1074 \u1086  test \u1074  \u1092 \u1072 \u1081 \u1083  4
+\f1\b0 \
+Alenas-Air:~ alenaarovikova$ cd test3\
+Alenas-Air:test3 alenaarovikova$ echo test >> 4.txt\
+
+\f0\b 10) \uc0\u1047 \u1072 \u1084 \u1077 \u1085 \u1080 \u1090 \u1077  \u1089 \u1083 \u1086 \u1074 \u1086  test \u1074  \u1092 \u1072 \u1081 \u1083 \u1077  4 \u1085 \u1072  fail
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ sed 's/test/fail/' ./4.txt\
+row1\
+row2\
+row3\
+row4\
+fail\
+
+\f0\b 11) \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1074  \u1092 \u1072 \u1081 \u1083  4 \u1089 \u1083 \u1086 \u1074 \u1086  test \u1090 \u1072 \u1082 , \u1095 \u1090 \u1086 \u1073 \u1099  \u1089 \u1086 \u1093 \u1088 \u1072 \u1085 \u1080 \u1083 \u1086 \u1089 \u1100  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1084 \u1086 \u1077 
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ echo "test" >> 4.txt\
+Alenas-Air:test3 alenaarovikova$ cat 4.txt\
+row1\
+row2\
+row3\
+row4\
+test\
+\
+test\
+
+\f0\b 12) \uc0\u1055 \u1088 \u1086 \u1089 \u1084 \u1086 \u1090 \u1088 \u1080 \u1090 \u1077  \u1074 \u1089 \u1077  \u1087 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089 \u1099  \u1076 \u1083 \u1103  \u1102 \u1079 \u1077 \u1088 \u1086 \u1074  \u1085 \u1077  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1074  \u1082 \u1086 \u1085 \u1089 \u1086 \u1083 \u1080 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1087 \u1088 \u1086 \u1080 \u1089 \u1093 \u1086 \u1076 \u1103 \u1090  \u1074  \u1089 \u1080 \u1089 \u1090 \u1077 \u1084 \u1077 
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ ps\
+  PID TTY           TIME CMD\
+66599 ttys002    0:00.52 /bin/bash --init-file /Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workben\
+Alenas-Air:test3 alenaarovikova$ ps aux\
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND\
+root             69594  68.9  0.2 408282256  15184   ??  Rs    9:59PM   0:02.20 /usr/libexec/coreduetd\
+alenaarovikova   69715  26.3  0.4 408359840  37056   ??  S    10:02PM   0:00.55 /System/Library/PrivateFrameworks/AMPLibra\
+_windowserver      369  12.1  0.7 413848448  58592   ??  Ss   Mon09PM 707:09.46 /System/Library/PrivateFrameworks/SkyLight\
+alenaarovikova   69717   8.2  0.6 408248112  51920   ??  S    10:02PM   0:00.83 /System/Library/PrivateFrameworks/Assistan\
+alenaarovikova   66220   6.0  1.0 1593648736  84128   ??  R     7:46PM   1:57.56 /Applications/Visual Studio Code.app/Conte\
+root               349   5.9  0.2 408283152  15216   ??  Ss   Mon09PM   4:15.63 /usr/libexec/dasd\
+alenaarovikova     600   5.6  0.1 408353232   9680   ??  S    Mon09PM   7:01.59 /usr/libexec/trustd --agent\
+root               360   3.2  0.2 408327232  18672   ??  Ss   Mon09PM  19:39.18 /usr/sbin/bluetoothd\
+alenaarovikova   69682   2.7  0.2 408239456  18672   ??  S    10:02PM   0:03.60 /System/Library/PrivateFrameworks/CacheDel\
+root               363   2.7  0.1 408266704   6528   ??  Ss   Mon09PM   7:14.77 /usr/libexec/corebrightnessd --launchd\
+alenaarovikova   66207   2.4  0.6 1585819072  49104   ??  S     7:46PM   1:25.69 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   65012   2.4  0.7 499054384  55392   ??  Ss    6:37PM   3:35.03 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova     614   2.4  0.3 409779072  25984   ??  S    Mon09PM   3:32.93 /System/Library/CoreServices/ControlCenter\
+alenaarovikova     689   2.3  0.2 408478096  17168   ??  S    Mon09PM   6:05.53 /usr/libexec/sharingd\
+alenaarovikova     772   2.2  0.4 1596019168  34048   ??  S    Mon09PM 318:21.63 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova   64689   2.0  0.2 408276240  14160   ??  S     5:14PM   0:17.06 /System/Library/PrivateFrameworks/TCC.fram\
+alenaarovikova   69733   1.9  0.2 408235008  13520   ??  S    10:02PM   0:00.05 /System/Library/PrivateFrameworks/AMPLibra\
+root             69646   1.9  0.1 408230752   7568   ??  Ss   10:01PM   0:00.32 /System/Library/CoreServices/backupd.bundl\
+root               300   1.8  0.2 408337104  17888   ??  Ss   Mon09PM  11:31.99 /usr/libexec/logd\
+root             62028   1.5  0.2 408270304  15888   ??  Ss    1:46PM   0:44.32 /usr/libexec/PerfPowerServices\
+alenaarovikova     681   1.5  0.1 408273744  10048   ??  S    Mon09PM   1:47.35 /System/Library/PrivateFrameworks/UserActi\
+root             69560   1.5  0.2 408268240  12752   ??  Ss    9:59PM   0:04.47 /usr/libexec/mobileassetd\
+alenaarovikova     581   1.5  0.1 408275728  11712   ??  S    Mon09PM   0:19.69 /usr/sbin/usernoted\
+root               396   1.4  0.1 408276640  11968   ??  Ss   Mon09PM   6:36.48 /usr/libexec/runningboardd\
+alenaarovikova   65843   1.3  0.2 409111952  12704   ??  S     7:28PM   0:06.25 /System/Library/CoreServices/Siri.app/Cont\
+alenaarovikova   42259   1.3  0.3 408516928  28368   ??  S    Fri03PM  10:29.23 /System/Library/PrivateFrameworks/CloudKit\
+alenaarovikova   66302   1.3  0.3 1585123744  21232   ??  S     7:48PM   0:30.95 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova     610   1.1  0.2 408455776  16912   ??  S    Mon09PM   7:40.59 /System/Library/Frameworks/Accounts.framew\
+root               327   1.0  0.2 408711008  20512   ??  Ss   Mon09PM  10:38.71 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova     722   1.0  0.6 414364432  50640   ??  Ss   Mon09PM  67:06.69 /System/Library/Frameworks/WebKit.framewor\
+root               553   1.0  0.4 411012400  31552   ??  Ss   Mon09PM  18:46.12 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova     579   0.8  0.2 408368064  16224   ??  S    Mon09PM   2:15.36 /usr/libexec/nsurlsessiond\
+root               305   0.8  0.1 408379808   5792   ??  Ss   Mon09PM  48:10.08 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova     572   0.8  0.1 408276256   9664   ??  S    Mon09PM   0:33.18 /usr/libexec/lsd\
+root                 1   0.8  0.2 408957232  18000   ??  Ss   Mon09PM  23:20.36 /sbin/launchd\
+_fpsd            67177   0.8  0.0 408077824   3856   ??  Ss    8:31PM   0:00.43 /System/Library/PrivateFrameworks/CoreADI.\
+alenaarovikova     586   0.7  0.1 408463888  11520   ??  S    Mon09PM   1:23.46 /usr/libexec/secd\
+root               361   0.7  0.0 408226096   2720   ??  Ss   Mon09PM   1:59.60 /usr/sbin/notifyd\
+alenaarovikova     611   0.7  0.2 408303952  16576   ??  S    Mon09PM   1:25.50 /System/Library/PrivateFrameworks/IDS.fram\
+_mdnsresponder     452   0.6  0.1 408275248   9280   ??  Ss   Mon09PM   4:05.18 /usr/sbin/mDNSResponder\
+_analyticsd        419   0.6  0.1 408275392   7664   ??  Ss   Mon09PM   1:19.74 /System/Library/PrivateFrameworks/CoreAnal\
+alenaarovikova     754   0.5  0.3 514854416  22336   ??  Ss   Mon09PM  24:19.16 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69731   0.5  0.2 408213248  19936   ??  S    10:02PM   0:00.07 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   69653   0.5  0.2 408349376  14768   ??  S    10:01PM   0:00.26 /System/Library/PrivateFrameworks/GeoServi\
+alenaarovikova   69395   0.4  0.4 514961056  35008   ??  Ss    9:52PM   0:08.92 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   66599   0.4  0.0 408167888   1776 s002  Ss    8:01PM   0:00.53 /bin/bash --init-file /Applications/Visual\
+alenaarovikova     606   0.4  0.5 416831824  39696   ??  S    Mon09PM  82:32.57 /Applications/Telegram.app/Contents/MacOS/\
+_fpsd              930   0.4  0.2 408225440  13552   ??  Ss   Mon09PM   0:24.79 /System/Library/PrivateFrameworks/CoreFP.f\
+alenaarovikova   65839   0.4  0.0 408103616   4000   ??  S     7:28PM   0:02.93 /System/Library/Frameworks/ApplicationServ\
+alenaarovikova    1185   0.4  0.4 415371280  35344   ??  Rs   Mon10PM 165:33.18 /System/Library/Frameworks/WebKit.framewor\
+root               313   0.4  0.1 408266336   6336   ??  Ss   Mon09PM   2:06.81 /System/Library/CoreServices/powerd.bundle\
+alenaarovikova     604   0.3  0.8 415492240  69984   ??  S    Mon09PM  35:47.75 /System/Volumes/Preboot/Cryptexes/App/Syst\
+alenaarovikova   60663   0.3  0.5 516511312  40560   ??  Ss   10:50AM   5:25.62 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69636   0.3  0.1 408248672   8864   ??  S    10:01PM   0:00.12 /usr/libexec/secinitd\
+root               428   0.3  0.1 408280320  11776   ??  Ss   Mon09PM  11:37.24 /usr/libexec/airportd\
+root               339   0.3  0.1 408356032  10832   ??  Ss   Mon09PM   0:55.45 /System/Library/PrivateFrameworks/ApplePus\
+root               372   0.3  0.1 408287296   9472   ??  Ss   Mon09PM   1:48.98 /System/Library/PrivateFrameworks/CoreDuet\
+alenaarovikova   66585   0.3  0.2 1585153280  17200   ??  S     8:01PM   0:03.44 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   69710   0.3  0.5 408338192  39808   ??  S    10:02PM   0:01.20 /System/Library/PrivateFrameworks/Assistan\
+root             69686   0.3  0.1 408199008   5632   ??  Ss   10:02PM   0:00.09 /System/Library/CoreServices/backupd.bundl\
+_networkd          457   0.2  0.1 408279104   8560   ??  Ss   Mon09PM   2:52.52 /usr/libexec/symptomsd\
+root             69692   0.2  0.1 408096928   6608   ??  Ss   10:02PM   0:00.06 /System/Library/PrivateFrameworks/PackageK\
+alenaarovikova    1815   0.2  1.2 499412176  98688   ??  Ss   Mon10PM  49:21.09 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   57960   0.2  0.1 408264832   6800   ??  S    10:08PM   3:49.21 /usr/libexec/containermanagerd --runmode=a\
+root             69691   0.2  0.1 408096928   6720   ??  Ss   10:02PM   0:00.10 /System/Library/PrivateFrameworks/PackageK\
+alenaarovikova   64004   0.2  0.1 408275600   9872   ??  S     3:52PM   0:01.43 /System/Library/PrivateFrameworks/AuthKit.\
+root               338   0.2  0.1 408288336   9168   ??  Ss   Mon09PM   8:32.06 /usr/libexec/opendirectoryd\
+alenaarovikova     616   0.2  0.3 414794208  24784   ??  S    Mon09PM   6:26.36 /System/Library/CoreServices/Finder.app/Co\
+root             29492   0.2  0.1 408275088  12272   ??  Ss   Thu04PM   3:09.79 /System/Library/PrivateFrameworks/TCC.fram\
+alenaarovikova   69703   0.2  0.2 408319424  19680   ??  S    10:02PM   0:00.32 /System/Library/PrivateFrameworks/AppleMed\
+_mysql             677   0.1  0.0 410032048   3632   ??  Ss   Mon09PM  13:13.35 /usr/local/mysql/bin/mysqld --user=_mysql \
+_biome           69595   0.1  0.1 408264448   9968   ??  Ss    9:59PM   0:00.57 /System/Library/PrivateFrameworks/BiomeStr\
+alenaarovikova    2562   0.1  0.1 515707568   9904   ??  Ss   Tue10AM  15:42.03 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69730   0.1  0.2 408213808  13248   ??  S    10:02PM   0:00.06 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova     552   0.1  0.0 408169952   4128   ??  S    Mon09PM   2:09.37 /usr/sbin/distnoted agent\
+alenaarovikova     652   0.1  0.1 408397520   5792   ??  S    Mon09PM   0:09.87 /System/Library/PrivateFrameworks/ViewBrid\
+alenaarovikova   67759   0.1  0.3 408945248  22384   ??  Ss    8:46PM   0:05.07 /System/Library/Frameworks/AppKit.framewor\
+alenaarovikova   69724   0.1  0.2 408213248  19808   ??  S    10:02PM   0:00.06 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   65863   0.1  0.1 408286288  11360   ??  Ss    7:29PM   0:02.11 /System/Library/CoreServices/Siri.app/Cont\
+alenaarovikova   69729   0.1  0.2 408213248  13520   ??  S    10:02PM   0:00.05 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   69725   0.1  0.2 408213248  13168   ??  S    10:02PM   0:00.06 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   67726   0.1  0.3 408973872  23504   ??  Ss    8:46PM   0:06.11 /System/Library/Frameworks/AppKit.framewor\
+alenaarovikova     563   0.1  0.1 408237856   4288   ??  S    Mon09PM   3:03.69 /usr/sbin/cfprefsd agent\
+root               330   0.1  0.1 408263824   4320   ??  Ss   Mon09PM   3:19.21 /usr/libexec/diskarbitrationd\
+alenaarovikova     597   0.1  0.4 442381472  35280   ??  S    Mon09PM  11:25.61 /Applications/Google Chrome.app/Contents/M\
+alenaarovikova    9861   0.1  0.1 515514400  12464   ??  Ss   Tue04PM   4:12.12 /System/Library/Frameworks/WebKit.framewor\
+root             69623   0.1  0.1 408248080   6608   ??  Ss   10:00PM   0:00.16 /usr/libexec/aned\
+alenaarovikova   69728   0.1  0.2 408213248  13184   ??  S    10:02PM   0:00.06 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   66262   0.1  0.3 408976768  23152   ??  Ss    7:46PM   0:12.16 /System/Library/Frameworks/AppKit.framewor\
+_driverkit       64985   0.1  0.0 408515792   1184   ??  Ss    6:36PM   0:36.55 /System/Library/DriverExtensions/com.apple\
+alenaarovikova     936   0.1  0.2 409862832  14320   ??  S    Mon09PM  10:47.19 /Applications/Utilities/Adobe Sync/CoreSyn\
+root             69625   0.1  0.0 408188352   2576   ??  Ss   10:00PM   0:00.28 auditd -l\
+root               607   0.1  0.1 408228640   5088   ??  Ss   Mon09PM   0:49.76 /usr/sbin/WirelessRadioManagerd\
+alenaarovikova   69695   0.1  0.2 408104560  17872   ??  Ss   10:02PM   0:00.09 /System/Applications/Music.app/Contents/Pl\
+root               366   0.1  0.0 408235776   4160   ??  Ss   Mon09PM   2:28.50 /usr/sbin/cfprefsd daemon\
+alenaarovikova   69732   0.1  0.2 408213248  13424   ??  S    10:02PM   0:00.05 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   32589   0.1  0.1 499032800  11344   ??  Ss   Thu08PM   5:14.06 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   45726   0.1  0.2 500848320  17104   ??  Ss   Fri07PM  35:08.03 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69727   0.1  0.2 408213248  19888   ??  S    10:02PM   0:00.06 /System/Library/Frameworks/CoreServices.fr\
+root               340   0.1  0.1 408272816  12160   ??  Ss   Mon09PM   6:28.88 /System/Library/CoreServices/launchservice\
+alenaarovikova   69726   0.1  0.2 408213248  13456   ??  S    10:02PM   0:00.05 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   66230   0.0  0.2 1585152800  18464   ??  S     7:46PM   0:06.06 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   66218   0.0  0.1 441845200  10112   ??  S     7:46PM   0:01.88 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   66217   0.0  0.3 442035472  25216   ??  R     7:46PM   1:03.27 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   66216   0.0  0.0 441595184   1536   ??  S     7:46PM   0:00.03 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   65884   0.0  0.1 408268480   7376   ??  S     7:32PM   0:04.32 /System/Library/Frameworks/ClassKit.framew\
+alenaarovikova   65874   0.0  0.1 408264176   6672   ??  S     7:32PM   0:00.55 /System/Library/Frameworks/LocalAuthentica\
+alenaarovikova   65873   0.0  0.1 408264544   5904   ??  S     7:32PM   0:00.68 /System/Library/PrivateFrameworks/Synapse.\
+alenaarovikova   65850   0.0  0.1 408429280  10128   ??  S     7:29PM   0:02.14 /System/Cryptexes/App/System/Library/CoreS\
+alenaarovikova   65842   0.0  0.1 408280352   9888   ??  S     7:28PM   0:01.91 /System/Library/PrivateFrameworks/SyncedDe\
+alenaarovikova   65580   0.0  0.0 407999616   1168   ??  S     7:05PM   0:00.02 /usr/bin/ssh-agent -l\
+alenaarovikova   65474   0.0  0.2 409921776  19616   ??  S     7:01PM   1:45.61 /System/Applications/TextEdit.app/Contents\
+alenaarovikova   65072   0.0  0.1 514407120   9296   ??  Ss    6:41PM   0:01.06 /System/Library/Frameworks/WebKit.framewor\
+_driverkit       64986   0.0  0.0 408497856    464   ??  Ss    6:36PM   0:00.01 /System/Library/DriverExtensions/com.apple\
+alenaarovikova   64886   0.0  0.1 408274080  10960   ??  S     5:21PM   0:02.27 /System/Library/PrivateFrameworks/CorePars\
+alenaarovikova   64873   0.0  0.2 409519728  17280   ??  S     5:21PM   0:00.56 /System/Library/CoreServices/UIKitSystem.a\
+alenaarovikova   64699   0.0  0.2 408281296  13328   ??  S     5:14PM   0:16.25 /System/Library/PrivateFrameworks/CoreDuet\
+alenaarovikova   64333   0.0  0.1 408273104  10176   ??  S     4:39PM   0:01.13 /System/Library/PrivateFrameworks/iCloudNo\
+_coreaudiod      63345   0.0  0.1 408689936   9552   ??  Ss    3:17PM   5:19.53 /usr/sbin/coreaudiod\
+alenaarovikova   57683   0.0  0.4 498872096  32240   ??  Ss   Sat09PM   6:18.97 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   56930   0.0  0.1 514048480   4736   ??  Ss   Sat08PM   0:01.32 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   54780   0.0  0.1 498661440  11344   ??  Ss   Sat03PM   3:15.72 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   53825   0.0  0.1 514528608   7072   ??  Ss   Sat02PM   0:07.05 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   53540   0.0  0.1 408294944  11120   ??  S    Sat01PM   0:53.34 /usr/libexec/knowledge-agent\
+alenaarovikova   52676   0.0  0.0 408543152    256   ??  Ss   Sat12PM   0:00.02 ssh-agent -s\
+alenaarovikova   52668   0.0  0.0 408523696    256   ??  Ss   Sat12PM   0:00.00 ssh-agent -s\
+alenaarovikova   52548   0.0  0.1 497902544   8160   ??  Ss   Sat12PM   0:23.62 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   52248   0.0  0.2 498919232  12608   ??  Ss   Sat11AM   1:33.45 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   51919   0.0  0.1 408391328   6608   ??  S    Sat11AM   0:01.46 /System/Library/PrivateFrameworks/Commerce\
+alenaarovikova   50611   0.0  0.1 409747648  12304   ??  S    Sat11AM   0:26.28 /System/Applications/Utilities/Terminal.ap\
+alenaarovikova   45861   0.0  0.1 498709040  10192   ??  Ss   Fri07PM   2:28.84 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   44568   0.0  0.1 498072176  11136   ??  Ss   Fri05PM   1:25.34 /System/Library/Frameworks/WebKit.framewor\
+root             42138   0.0  0.0 408103680   3328   ??  SNs  Fri03PM   0:01.06 /usr/libexec/warmd\
+alenaarovikova   40378   0.0  0.1 408264880   6496   ??  S    Fri11AM   0:12.11 /System/Library/PrivateFrameworks/BiomeStr\
+alenaarovikova   38553   0.0  0.1 497909104   7456   ??  Ss   Fri10AM   0:32.72 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38549   0.0  0.1 514648912   7024   ??  Ss   Fri10AM   0:31.96 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38545   0.0  0.1 514351440   7392   ??  Ss   Fri10AM   0:30.52 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38534   0.0  0.1 514514720   7376   ??  Ss   Fri10AM   0:30.50 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38532   0.0  0.1 497699248   6640   ??  Ss   Fri10AM   0:30.86 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38519   0.0  0.1 497578016   7312   ??  Ss   Fri10AM   0:31.06 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   38517   0.0  0.2 514777488  15440   ??  Ss   Fri10AM   0:57.64 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   37820   0.0  0.1 515365328   9648   ??  Ss   Fri09AM   1:31.42 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   34642   0.0  0.1 410031328   7312   ??  S    Thu09PM   0:37.09 /Library/Application Support/Adobe/Creativ\
+root             34621   0.0  0.0 409248208   4080   ??  Ss   Thu09PM   0:00.33 /Library/PrivilegedHelperTools/com.adobe.a\
+alenaarovikova   34610   0.0  0.3 458598000  22640   ??  S    Thu09PM   2:46.39 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   34609   0.0  0.1 409499392   7008   ??  S    Thu09PM   0:08.74 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   34607   0.0  0.0 408957664   3600   ??  S    Thu09PM   0:00.26 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   34590   0.0  0.2 414927360  17152   ??  S    Thu09PM   1:58.79 /Library/Application Support/Adobe/Adobe D\
+alenaarovikova   34589   0.0  0.1 409926016   9584   ??  S    Thu09PM   9:13.03 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   34578   0.0  0.2 410224528  18000   ??  S    Thu09PM   1:13.79 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   34565   0.0  0.1 409124560   5392   ??  S    Thu09PM   1:27.38 /Library/Application Support/Adobe/Adobe D\
+alenaarovikova   34562   0.0  0.1 409675872   7200   ??  S    Thu09PM   1:43.38 /Library/Application Support/Adobe/Adobe D\
+alenaarovikova   30619   0.0  0.1 497959424   8640   ??  Ss   Thu05PM   1:07.40 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   29591   0.0  0.1 498417376   8416   ??  Ss   Thu04PM   1:49.08 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   28947   0.0  0.1 498668192   9968   ??  Ss   Thu03PM   1:44.34 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   28801   0.0  0.1 498327904  10688   ??  Ss   Thu03PM   1:56.60 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   28601   0.0  0.1 498676592  10144   ??  Ss   Thu03PM   4:01.74 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   28506   0.0  0.1 515043152   9472   ??  Ss   Thu02PM   1:55.31 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   27877   0.0  0.1 498762736   9152   ??  Ss   Thu02PM   1:46.09 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   27876   0.0  0.1 514584640   7696   ??  Ss   Thu02PM   0:35.70 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   26599   0.0  0.1 498407248   9648   ??  Ss   Thu12PM   2:04.51 /System/Library/Frameworks/WebKit.framewor\
+root             23011   0.0  0.0 408234544   3040   ??  Ss   Wed09PM   0:05.41 /System/Library/Frameworks/Security.framew\
+alenaarovikova   19054   0.0  0.1 408438816   6832   ??  Ss   Wed06PM   0:18.20 /System/Library/PrivateFrameworks/ShareKit\
+alenaarovikova   19038   0.0  0.1 408274080   7616   ??  Ss   Wed06PM   0:02.16 /System/Library/PrivateFrameworks/CloudDoc\
+alenaarovikova   19020   0.0  0.1 408282912   9424   ??  S    Wed06PM   0:15.48 /System/Library/PrivateFrameworks/FileProv\
+alenaarovikova   15753   0.0  0.1 497831904   6544   ??  Ss   Wed02PM   0:20.47 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   15685   0.0  0.1 497639280   5984   ??  Ss   Wed02PM   0:11.54 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   13028   0.0  0.1 498020720   8016   ??  Ss   Wed10AM   2:21.46 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   13020   0.0  0.1 498911120   8384   ??  Ss   Wed10AM   3:23.53 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   12811   0.0  0.0 408197264   3072   ??  S    Wed08AM   0:00.10 /System/Library/CoreServices/Setup Assista\
+alenaarovikova   11904   0.0  0.1 408283088   7424   ??  S    Tue10PM   0:14.03 /usr/libexec/searchpartyuseragent\
+alenaarovikova   11351   0.0  0.0 408686928   2368   ??  S<   Tue09PM   0:00.05 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova   10419   0.0  0.1 408227824   4288   ??  S    Tue05PM   0:00.31 /System/Library/PrivateFrameworks/IMDPersi\
+root              9577   0.0  0.0 408197184   2528   ??  Ss   Tue03PM   0:00.12 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova    9497   0.0  0.0 408066480   2528   ??  S    Tue03PM   0:00.17 /System/Library/PrivateFrameworks/Kerberos\
+alenaarovikova    9473   0.0  0.0 408914432   3216   ??  Ss   Tue03PM   0:00.84 adb -L tcp:5037 fork-server server --reply\
+alenaarovikova    8424   0.0  0.2 408313632  12672   ??  S    Tue03PM   7:17.06 /System/Library/PrivateFrameworks/ScreenTi\
+alenaarovikova    7921   0.0  0.1 408396976   4960   ??  S    Tue02PM   0:03.76 /System/Library/PrivateFrameworks/MobileDe\
+alenaarovikova    7072   0.0  0.1 408234752   4928   ??  S    Tue02PM   0:03.73 /usr/libexec/tipsd\
+root              6606   0.0  0.0 408263168   3120   ??  Ss   Tue02PM   0:00.18 /System/Library/PrivateFrameworks/SystemSt\
+alenaarovikova    6157   0.0  0.1 514390736   7536   ??  Ss   Tue01PM   0:19.44 /System/Library/Frameworks/WebKit.framewor\
+root              3854   0.0  0.0 408265712   3392   ??  Ss   Tue11AM   0:00.24 /usr/libexec/kcproxy\
+alenaarovikova    2909   0.0  0.1 408201296   4336   ??  S    Tue10AM   0:00.43 /System/Library/PrivateFrameworks/Commerce\
+alenaarovikova    2809   0.0  0.1 497944080   7808   ??  Ss   Tue10AM   2:01.88 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova    2797   0.0  0.1 498647216   8880   ??  Ss   Tue10AM  17:14.32 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova    2761   0.0  0.1 408235616   4816   ??  S    Tue10AM   0:03.27 /System/Library/PrivateFrameworks/Commerce\
+alenaarovikova    2740   0.0  0.1 515516144   7120   ??  Ss   Tue10AM   3:54.19 /System/Library/Frameworks/WebKit.framewor\
+_fpsd             2578   0.0  0.0 408308224   3296   ??  Ss   Tue10AM   0:08.00 /System/Library/PrivateFrameworks/CoreLSKD\
+alenaarovikova    1767   0.0  0.6 514534496  46176   ??  Ss   Mon10PM  25:02.93 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova    1668   0.0  0.1 408325264   8592   ??  S    Mon10PM   0:07.83 /System/Library/CoreServices/UserNotificat\
+alenaarovikova    1493   0.0  0.1 442213760   6352   ??  S    Mon10PM   0:43.45 /Applications/Google Chrome.app/Contents/F\
+alenaarovikova    1442   0.0  0.4 515939728  33856   ??  Ss   Mon10PM  10:18.32 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova    1418   0.0  0.1 408267200   4224   ??  S    Mon10PM   0:01.04 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova    1351   0.0  0.1 408320720   6704   ??  S    Mon10PM   0:12.02 /System/Library/CoreServices/PowerChime.ap\
+root              1201   0.0  0.0 408227200   3152   ??  Ss   Mon10PM   0:00.64 /System/Library/CoreServices/SubmitDiagInf\
+_rmd              1144   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.44 /usr/sbin/distnoted agent\
+_spotlight        1052   0.0  0.0 408229664   3888   ??  SN   Mon09PM   0:09.67 /System/Library/Frameworks/CoreServices.fr\
+root              1012   0.0  0.0 34618940    876   ??  Ss   Mon09PM   0:05.01 /Library/PrivilegedHelperTools/com.xk72.ch\
+alenaarovikova    1002   0.0  1.0 409800240  81152   ??  S    Mon09PM   1:07.91 /System/Library/Services/AppleSpell.servic\
+alenaarovikova     962   0.0  0.1 408237072   6944   ??  SN   Mon09PM   0:19.87 /System/Library/Frameworks/CoreServices.fr\
+root               944   0.0  0.0 408196592   2432   ??  Ss   Mon09PM   0:00.06 /System/Library/CoreServices/CrashReporter\
+root               932   0.0  0.0 408097408   2816   ??  S    Mon09PM   0:04.54 /usr/sbin/systemstats --logger-helper /pri\
+root               926   0.0  0.0 408270400   2496   ??  Ss   Mon09PM   0:00.82 /System/Library/Frameworks/CoreMediaIO.fra\
+_assetcache        918   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.39 /usr/sbin/distnoted agent\
+alenaarovikova     908   0.0  0.0 408197136   2368   ??  S    Mon09PM   0:00.05 /usr/libexec/USBAgent\
+_gamecontrollerd   904   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.52 /usr/sbin/distnoted agent\
+_accessoryupdater   903   0.0  0.0 408168928   1664   ??  S    Mon09PM   0:06.43 /usr/sbin/distnoted agent\
+alenaarovikova     830   0.0  0.1 408230448   7248   ??  S    Mon09PM   0:13.18 /System/Library/CoreServices/diagnostics_a\
+alenaarovikova     846   0.0  0.1 409882000  11008   ??  S    Mon09PM  10:45.60 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova     838   0.0  0.0 408233600   2992   ??  S    Mon09PM   0:00.32 /System/Library/Frameworks/CryptoTokenKit.\
+alenaarovikova     837   0.0  0.1 409151936   5696   ??  S    Mon09PM   0:08.41 /Applications/WireGuard.app/Contents/MacOS\
+alenaarovikova     815   0.0  0.1 408290640   6720   ??  S    Mon09PM 126:02.06 /System/Library/PrivateFrameworks/CoreSpee\
+alenaarovikova     825   0.0  0.0 408264128   3216   ??  S    Mon09PM   0:00.88 /System/Library/Image Capture/Support/icdd\
+root               835   0.0  0.0 408233568   2544   ??  Ss   Mon09PM   0:00.51 /System/Library/Frameworks/CryptoTokenKit.\
+alenaarovikova     831   0.0  0.1 409282208   6320   ??  S    Mon09PM   0:18.92 /System/Library/CoreServices/TextInputMenu\
+alenaarovikova     828   0.0  0.1 409006224   4288   ??  S    Mon09PM   0:04.02 /System/Library/CoreServices/AirPlayUIAgen\
+_driverkit         799   0.0  0.0 408497872     64   ??  Ss   Mon09PM   0:00.28 /System/Library/DriverExtensions/IOUserBlu\
+alenaarovikova     796   0.0  0.1 408472208   4800   ??  S    Mon09PM   0:13.31 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova     795   0.0  0.1 409243408   4592   ??  S    Mon09PM   0:04.34 /System/Library/PrivateFrameworks/Universa\
+alenaarovikova     791   0.0  0.1 410132640   7968   ??  S    Mon09PM  26:41.68 /usr/libexec/avconferenced\
+alenaarovikova     790   0.0  0.0 408102368   2496   ??  S    Mon09PM   0:02.26 /System/Library/PrivateFrameworks/MediaRem\
+alenaarovikova     784   0.0  0.1 408268864   9936   ??  S    Mon09PM   0:13.48 /System/Library/PrivateFrameworks/IMCore.f\
+alenaarovikova     774   0.0  0.2 409377600  16032   ??  S    Mon09PM   4:43.88 /System/Library/Frameworks/CoreServices.fr\
+_applepay          768   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.48 /usr/sbin/distnoted agent\
+alenaarovikova     762   0.0  0.1 409115552   7504   ??  S    Mon09PM   0:40.47 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova     760   0.0  0.1 409698272   7344   ??  S    Mon09PM 407:26.91 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova     757   0.0  0.0 408096832   1232   ??  S    Mon09PM   0:00.61 /Applications/Discord.app/Contents/Framewo\
+alenaarovikova     751   0.0  0.0 408233568   3984   ??  S    Mon09PM   0:06.36 /System/Cryptexes/App/usr/libexec/webinspe\
+alenaarovikova     749   0.0  0.1 408931456   6016   ??  Ss   Mon09PM   2:47.26 /System/Volumes/Preboot/Cryptexes/App/Syst\
+alenaarovikova     732   0.0  0.1 408283376   7888   ??  S    Mon09PM   0:11.68 /System/Library/PrivateFrameworks/PassKitC\
+root               720   0.0  0.0 408226048   1248   ??  Ss   Mon09PM   0:00.13 /System/Library/Frameworks/OpenGL.framewor\
+alenaarovikova     716   0.0  0.1 409719072   5040   ??  S    Mon09PM   0:16.35 /System/Cryptexes/App/usr/libexec/com.appl\
+_spotlight         715   0.0  0.0 408168928   1616   ??  S    Mon09PM   0:06.50 /usr/sbin/distnoted agent\
+alenaarovikova     699   0.0  0.1 442079584   4288   ??  S    Mon09PM   0:32.59 /Applications/Google Chrome.app/Contents/F\
+alenaarovikova     697   0.0  0.1 408264400   6368   ??  Ss   Mon09PM   0:13.21 /System/Library/Input Methods/PressAndHold\
+alenaarovikova     696   0.0  0.0 408134192   3680   ??  S    Mon09PM   0:01.71 /System/Library/Frameworks/InputMethodKit.\
+alenaarovikova     695   0.0  0.1 442119904  10976   ??  S    Mon09PM   2:55.52 /Applications/Google Chrome.app/Contents/F\
+alenaarovikova     694   0.0  0.2 442302160  16944   ??  S    Mon09PM   4:11.79 /Applications/Google Chrome.app/Contents/F\
+alenaarovikova     688   0.0  0.0 441605280   1200   ??  S    Mon09PM   0:00.66 /Applications/Google Chrome.app/Contents/F\
+_cmiodalassistants   684   0.0  0.0 408272128   3856   ??  Ss   Mon09PM   3:55.86 /usr/sbin/appleh13camerad\
+_nearbyd           676   0.0  0.1 408234304   6752   ??  Ss   Mon09PM   2:07.81 /usr/libexec/nearbyd\
+alenaarovikova     682   0.0  0.1 408783600   6768   ??  Ss   Mon09PM   1:38.14 /System/Library/CoreServices/Dock.app/Cont\
+alenaarovikova     596   0.0  0.1 408392096   5552   ??  S    Mon09PM   0:38.92 /System/Library/CoreServices/WiFiAgent.app\
+alenaarovikova     624   0.0  0.1 408281312   8512   ??  S    Mon09PM   1:04.88 /usr/libexec/ContinuityCaptureAgent\
+alenaarovikova     667   0.0  0.1 408275104   9488   ??  S    Mon09PM   0:13.62 /System/Library/PrivateFrameworks/Commerce\
+alenaarovikova     664   0.0  0.1 409590464  11632   ??  S    Mon09PM   1:10.43 /System/Library/CoreServices/NotificationC\
+alenaarovikova     651   0.0  0.1 408304720  11504   ??  S    Mon09PM   0:33.88 /System/Library/PrivateFrameworks/FamilyCi\
+alenaarovikova     645   0.0  0.0 408235088   3584   ??  S    Mon09PM   0:01.33 /System/Library/PrivateFrameworks/AMPDevic\
+alenaarovikova     648   0.0  0.0 408303632   3328   ??  Ss   Mon09PM   0:04.44 /Applications/Utilities/Adobe Sync/CoreSyn\
+alenaarovikova     642   0.0  0.1 408267104   5680   ??  S    Mon09PM   0:04.03 /System/Library/CoreServices/sharedfilelis\
+root               640   0.0  0.0 408104160   2288   ??  Ss   Mon09PM   0:00.47 automountd\
+_oahd              637   0.0  0.0 408561904   1328   ??  Ss   Mon09PM   0:00.76 /usr/libexec/rosetta/oahd\
+alenaarovikova     631   0.0  0.0 408250560   3216   ??  S    Mon09PM   0:00.56 /System/Library/Frameworks/ApplicationServ\
+alenaarovikova     629   0.0  0.2 408287904  15680   ??  S    Mon09PM   2:51.82 /System/Library/PrivateFrameworks/CloudDoc\
+root               626   0.0  0.1 408242944   5152   ??  Ss   Mon09PM   0:10.37 /usr/sbin/filecoordinationd\
+alenaarovikova     620   0.0  0.0 408264816   3344   ??  S    Mon09PM   0:05.13 /System/Library/Frameworks/ApplicationServ\
+alenaarovikova     619   0.0  0.3 410192992  27920   ??  S    Mon09PM   0:40.22 /System/Library/CoreServices/Spotlight.app\
+alenaarovikova     615   0.0  0.1 409543888   7328   ??  S    Mon09PM   0:08.33 /System/Library/CoreServices/SystemUIServe\
+alenaarovikova     613   0.0  0.2 409670688  17936   ??  S    Mon09PM   3:13.79 /System/Library/CoreServices/Dock.app/Cont\
+alenaarovikova     605   0.0  0.3 1585349920  21856   ??  S    Mon09PM   7:54.60 /Applications/Discord.app/Contents/MacOS/D\
+alenaarovikova     599   0.0  0.1 408241712   5088   ??  S    Mon09PM   0:02.53 /usr/libexec/pboard\
+_appleevents       593   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.44 /usr/sbin/distnoted agent\
+alenaarovikova     583   0.0  0.1 408273216  11376   ??  S    Mon09PM   1:06.02 /usr/libexec/rapportd\
+alenaarovikova     578   0.0  0.1 408265024   5056   ??  S    Mon09PM   0:43.50 /System/Library/CoreServices/lockoutagent\
+alenaarovikova     576   0.0  0.1 408277216   7504   ??  S    Mon09PM   0:23.80 /System/Library/Frameworks/CoreTelephony.f\
+alenaarovikova     573   0.0  0.1 409540000   7120   ??  S    Mon09PM   1:20.28 /System/Library/CoreServices/WindowManager\
+alenaarovikova     566   0.0  0.1 408269984   8096   ??  S    Mon09PM   1:34.79 /usr/libexec/UserEventAgent (Aqua)\
+_nsurlsessiond     562   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.49 /usr/sbin/distnoted agent\
+root               556   0.0  0.1 408265584   5840   ??  Ss   Mon09PM   0:17.58 /usr/libexec/wifianalyticsd\
+root               550   0.0  0.1 408285744   6048   ??  Ss   Mon09PM   0:02.20 /System/Library/CoreServices/Software Upda\
+_softwareupdate    549   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.62 /usr/sbin/distnoted agent\
+root               543   0.0  0.0 408197216   1184   ??  Ss   Mon09PM   0:00.05 /usr/libexec/securityd_service\
+root               541   0.0  0.1 408265248   4784   ??  Ss   Mon09PM   0:02.77 /System/Library/Frameworks/LocalAuthentica\
+_locationd         537   0.0  0.0 408168928   1664   ??  S    Mon09PM   0:06.71 /usr/sbin/distnoted agent\
+_softwareupdate    532   0.0  0.1 412872336  11904   ??  Ss   Mon09PM   3:48.14 /System/Library/CoreServices/Software Upda\
+root               520   0.0  0.0 408266880   4144   ??  Ss   Mon09PM   0:14.78 /usr/libexec/diskmanagementd\
+_driverkit         517   0.0  0.0 408504144    128   ??  Ss   Mon09PM   0:03.18 /System/Library/DriverExtensions/com.apple\
+_driverkit         513   0.0  0.0 408496768     48   ??  Ss   Mon09PM   0:00.32 /System/Library/DriverExtensions/com.apple\
+_cmiodalassistants   497   0.0  0.0 408266320   3520   ??  Ss   Mon09PM   0:02.05 /System/Library/Frameworks/CoreMediaIO.fra\
+root               494   0.0  0.1 408288512  11392   ??  Ss   Mon09PM   6:28.89 /usr/libexec/searchpartyd\
+root               498   0.0  0.0 408824176   3280   ??  Ss   Mon09PM   1:35.99 /usr/sbin/audioclocksyncd\
+_appleevents       496   0.0  0.1 408265520   4400   ??  Ss   Mon09PM   0:04.08 /System/Library/CoreServices/appleeventsd \
+_cmiodalassistants   479   0.0  0.0 408168928   1696   ??  S    Mon09PM   0:06.90 /usr/sbin/distnoted agent\
+_locationd         346   0.0  0.2 408307920  19600   ??  Ss   Mon09PM  10:10.01 /usr/libexec/locationd\
+root               460   0.0  0.1 408232720   4288   ??  Ss   Mon09PM   0:01.74 /System/Library/PrivateFrameworks/Wireless\
+root               458   0.0  0.0 408228608   2784   ??  Ss   Mon09PM   0:09.04 /usr/sbin/mDNSResponderHelper\
+_coreaudiod        451   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:06.92 /usr/sbin/distnoted agent\
+_netbios           446   0.0  0.0 408197536   2416   ??  SNs  Mon09PM   0:05.65 /usr/sbin/netbiosd\
+_windowserver      439   0.0  0.0 408168928   1568   ??  S    Mon09PM   0:07.34 /usr/sbin/distnoted agent\
+root               444   0.0  0.0 408266704   3600   ??  Ss   Mon09PM   0:06.28 /System/Library/Frameworks/Security.framew\
+root               433   0.0  0.0 408168928   1776   ??  S    Mon09PM   0:08.94 /usr/sbin/distnoted agent\
+_nsurlsessiond     412   0.0  0.1 408364320   9536   ??  Ss   Mon09PM   0:46.72 /usr/libexec/nsurlsessiond --privileged\
+_trustd            405   0.0  0.1 408358256   9024   ??  Ss   Mon09PM   1:59.96 /usr/libexec/trustd\
+root               411   0.0  0.0 408196800   2720   ??  Ss   Mon09PM   0:00.70 /usr/libexec/apfsd\
+_distnote          351   0.0  0.0 408168928   2784   ??  Ss   Mon09PM   1:20.19 /usr/sbin/distnoted daemon\
+_timed             341   0.0  0.0 408264384   2896   ??  Ss   Mon09PM   0:05.39 /usr/libexec/timed\
+root               386   0.0  0.0 408251072   3936   ??  Ss   Mon09PM   0:14.16 /System/Library/CoreServices/coreservicesd\
+_usbmuxd           342   0.0  0.0 408233664   3232   ??  Ss   Mon09PM   0:02.97 /System/Library/PrivateFrameworks/MobileDe\
+root               381   0.0  0.1 408274144   8384   ??  Ss   Mon09PM   0:34.38 /usr/libexec/lsd runAsRoot\
+alenaarovikova     371   0.0  0.2 409721856  20240   ??  Ss   Mon09PM   2:07.32 /System/Library/CoreServices/loginwindow.a\
+root               368   0.0  0.1 408418672   7376   ??  Ss   Mon09PM   1:10.72 /usr/libexec/syspolicyd\
+root               334   0.0  0.0 408235216   1232   ??  Ss   Mon09PM   0:18.73 /usr/sbin/syslogd\
+root               356   0.0  0.1 408275504   7584   ??  Ss   Mon09PM   0:27.53 /System/Library/PrivateFrameworks/Generati\
+root               309   0.0  0.1 408254384   5456   ??  Ss   Mon09PM  15:16.88 /usr/sbin/systemstats --daemon\
+root               306   0.0  0.1 408269280   8912   ??  Ss   Mon09PM   0:57.74 /System/Library/PrivateFrameworks/MediaRem\
+root               357   0.0  0.0 408066640   1680   ??  Ss   Mon09PM   0:02.44 /usr/sbin/KernelEventAgent\
+root               348   0.0  0.0 408197072   2096   ??  Ss   Mon09PM   0:00.07 autofsd\
+root               343   0.0  0.1 408233488   6640   ??  Ss   Mon09PM   0:27.04 /usr/sbin/securityd -i\
+root               337   0.0  0.0 408226832   3184   ??  Ss   Mon09PM   0:39.00 /usr/libexec/thermalmonitord\
+root               323   0.0  0.0 408058976   2400   ??  Ss   Mon09PM   0:11.00 /usr/libexec/watchdogd\
+root               318   0.0  0.0 408267936   2576   ??  Ss   Mon09PM   0:02.75 /usr/libexec/remoted\
+root               355   0.0  0.0 408102448   3472   ??  Ss   Mon09PM   0:01.26 /System/Library/CoreServices/logind\
+root               364   0.0  0.1 408266848   6400   ??  Ss   Mon09PM   0:21.15 /usr/libexec/AirPlayXPCHelper\
+root               311   0.0  0.1 408269664   5936   ??  Ss   Mon09PM   1:11.94 /usr/libexec/configd\
+root               304   0.0  0.0 408048816   1616   ??  Ss   Mon09PM   0:10.44 /System/Library/PrivateFrameworks/Uninstal\
+root               302   0.0  0.1 408267072   6176   ??  Ss   Mon09PM   0:48.55 /usr/libexec/UserEventAgent (System)\
+root               329   0.0  0.0 408255168   3664   ??  Ss   Mon09PM   0:02.78 /usr/libexec/kernelmanagerd\
+alenaarovikova   63742   0.0  0.0        0      0   ??  Z     3:39PM   0:00.00 <defunct>\
+alenaarovikova   58159   0.0  0.0        0      0   ??  Z    10:24PM   0:00.00 <defunct>\
+alenaarovikova   53624   0.0  0.0        0      0   ??  Z    Sat02PM   0:00.00 <defunct>\
+alenaarovikova   47365   0.0  0.0        0      0   ??  Z    Fri09PM   0:00.00 <defunct>\
+alenaarovikova   42198   0.0  0.0        0      0   ??  Z    Fri03PM   0:00.00 <defunct>\
+alenaarovikova   35812   0.0  0.0        0      0   ??  Z    Thu10PM   0:00.00 <defunct>\
+alenaarovikova   30248   0.0  0.0        0      0   ??  Z    Thu05PM   0:00.00 <defunct>\
+alenaarovikova   26195   0.0  0.0        0      0   ??  Z    Thu11AM   0:00.00 <defunct>\
+alenaarovikova   20233   0.0  0.0        0      0   ??  Z    Wed08PM   0:00.00 <defunct>\
+alenaarovikova   15759   0.0  0.0        0      0   ??  Z    Wed02PM   0:00.00 <defunct>\
+alenaarovikova   11378   0.0  0.0        0      0   ??  Z    Tue09PM   0:00.00 <defunct>\
+alenaarovikova    6069   0.0  0.0        0      0   ??  Z    Tue01PM   0:00.00 <defunct>\
+alenaarovikova    1217   0.0  0.0        0      0   ??  Z    Mon10PM   0:00.00 <defunct>\
+root             69738   0.0  0.0 408102528   1600 s002  R+   10:02PM   0:00.00 ps aux\
+alenaarovikova     703   0.0  0.0        0      0   ??  Z    Mon09PM   0:00.00 <defunct>\
+alenaarovikova   69716   0.0  0.1 412652928   8240   ??  Ss   10:02PM   0:00.04 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69714   0.0  0.2 408231888  17296   ??  S    10:02PM   0:00.20 /usr/libexec/siriknowledged\
+alenaarovikova   69713   0.0  0.1 408066128   5776   ??  Ss   10:02PM   0:00.02 /System/Library/PrivateFrameworks/iCloudDr\
+alenaarovikova   69712   0.0  0.2 408303856  15216   ??  S    10:02PM   0:00.24 /usr/libexec/promotedcontentd\
+alenaarovikova   69711   0.0  0.2 408098624  14800   ??  Ss   10:02PM   0:00.58 /System/Library/PrivateFrameworks/CoreEmbe\
+root             69709   0.0  0.0 408358688   3760   ??  S    10:02PM   0:00.02 /System/Library/Frameworks/Security.framew\
+alenaarovikova   69708   0.0  0.2 408235056  14192   ??  S    10:02PM   0:00.20 /usr/libexec/swcd\
+root             69707   0.0  0.1 408197744   5296   ??  Ss   10:02PM   0:00.04 /System/Library/PrivateFrameworks/AppStore\
+alenaarovikova   69706   0.0  0.4 408418784  36256   ??  S    10:02PM   0:01.05 /System/Library/PrivateFrameworks/HomeKitD\
+_installcoordinationd 69705   0.0  0.1 408197856   7120   ??  Ss   10:02PM   0:00.05 /System/Library/PrivateFrameworks/InstallC\
+alenaarovikova   69704   0.0  0.3 412778672  24000   ??  S    10:02PM   0:00.60 /System/Library/PrivateFrameworks/AppleMed\
+alenaarovikova   69701   0.0  0.3 412626352  21584   ??  Ss   10:02PM   0:00.13 /System/Volumes/Preboot/Cryptexes/App/Syst\
+alenaarovikova   69700   0.0  0.2 408104560  17392   ??  Ss   10:02PM   0:00.06 /System/Applications/TV.app/Contents/PlugI\
+alenaarovikova   69699   0.0  0.0 408066064   2912   ??  S    10:02PM   0:00.02 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   69698   0.0  0.3 408326448  28576   ??  S    10:02PM   0:00.56 /System/Library/PrivateFrameworks/AppStore\
+alenaarovikova   69696   0.0  0.2 408747744  12976   ??  S    10:02PM   0:00.22 /System/Library/Frameworks/QuickLookThumbn\
+root             69697   0.0  0.1 408228096  12368   ??  Ss   10:02PM   0:00.28 /System/Library/PrivateFrameworks/CloudKit\
+root             69694   0.0  0.1 408787440   4944   ??  Ss   10:02PM   0:00.04 /usr/libexec/usermanagerd -t 15\
+root             69693   0.0  0.1 408198752   4208   ??  Ss   10:02PM   0:00.05 /System/Library/PrivateFrameworks/CoreSymb\
+alenaarovikova   69690   0.0  0.1 408229168   8736   ??  S    10:02PM   0:00.07 /System/Library/PrivateFrameworks/GeoServi\
+root             69689   0.0  0.1 408231216   4592   ??  Ss   10:02PM   0:00.13 /System/Library/PrivateFrameworks/AssetCac\
+alenaarovikova   69688   0.0  0.2 408229248  12864   ??  S    10:02PM   0:00.85 /usr/libexec/triald\
+_assetcache      69687   0.0  0.1 408230048   8144   ??  Ss   10:02PM   0:00.14 /usr/libexec/AssetCache/AssetCache\
+_reportmemoryexception 69685   0.0  0.1 408067248   4800   ??  Ss   10:02PM   0:00.03 /usr/libexec/ReportMemoryException\
+alenaarovikova   69684   0.0  0.1 408228032  11296   ??  S    10:02PM   0:00.07 /usr/libexec/replayd\
+root             69683   0.0  0.0 408066064   3600   ??  Ss   10:02PM   0:00.04 /System/Library/PrivateFrameworks/CacheDel\
+alenaarovikova   69677   0.0  0.2 408213248  16352   ??  S    10:01PM   0:00.13 /System/Library/Frameworks/CoreServices.fr\
+alenaarovikova   69673   0.0  0.1 408232496   8832   ??  S    10:01PM   0:00.11 /usr/libexec/dmd\
+alenaarovikova   69669   0.0  0.1 408493184   7936   ??  Ss   10:01PM   0:00.07 /System/Library/PrivateFrameworks/Telephon\
+alenaarovikova   69668   0.0  0.3 408286080  27856   ??  S    10:01PM   0:00.55 /System/Library/PrivateFrameworks/Telephon\
+alenaarovikova   69667   0.0  0.1 408292160  10176   ??  S    10:01PM   0:00.14 /System/Library/PrivateFrameworks/Translat\
+alenaarovikova   69666   0.0  0.2 408322640  15904   ??  S    10:01PM   0:00.17 /System/Library/PrivateFrameworks/PaperKit\
+alenaarovikova   69665   0.0  0.2 408338544  18768   ??  S    10:01PM   0:00.72 /System/Library/PrivateFrameworks/MediaAna\
+alenaarovikova   69664   0.0  0.2 408212688  16656   ??  S    10:01PM   0:00.09 /System/Library/Frameworks/CoreServices.fr\
+_locationd       69663   0.0  0.0 408226848   3392   ??  S    10:01PM   0:00.05 /usr/libexec/containermanagerd --runmode=a\
+_cmiodalassistants 69662   0.0  0.0 408226848   3360   ??  S    10:01PM   0:00.05 /usr/libexec/containermanagerd --runmode=a\
+root             69661   0.0  0.0 408198288   3008   ??  Ss   10:01PM   0:00.04 /usr/libexec/trustdFileHelper\
+_cmiodalassistants 69660   0.0  0.1 408248464   5872   ??  S    10:01PM   0:00.14 /usr/libexec/trustd --agent\
+_locationd       69659   0.0  0.1 408230032   5872   ??  S    10:01PM   0:00.14 /usr/libexec/trustd --agent\
+_cmiodalassistants 69658   0.0  0.0 408208400   1904   ??  S    10:01PM   0:00.05 /usr/sbin/cfprefsd agent\
+_locationd       69657   0.0  0.0 408209424   1968   ??  S    10:01PM   0:00.05 /usr/sbin/cfprefsd agent\
+_cmiodalassistants 69656   0.0  0.0 408247328   3904   ??  S    10:01PM   0:00.04 /usr/libexec/secinitd\
+_locationd       69655   0.0  0.0 408227872   3904   ??  S    10:01PM   0:00.04 /usr/libexec/secinitd\
+_cmiodalassistants 69654   0.0  0.1 408346592  10592   ??  S    10:01PM   0:00.23 /System/Library/PrivateFrameworks/GeoServi\
+_locationd       69652   0.0  0.1 408345056  10528   ??  S    10:01PM   0:00.23 /System/Library/PrivateFrameworks/GeoServi\
+root             69651   0.0  0.0 408226848   3376   ??  S    10:01PM   0:00.04 /usr/libexec/containermanagerd --runmode=a\
+root             69650   0.0  0.0 408226848   3776   ??  Ss   10:01PM   0:00.06 /usr/libexec/containermanagerd --runmode=p\
+root             69649   0.0  0.0 408247312   3904   ??  Ss   10:01PM   0:00.05 /usr/libexec/secinitd\
+root             69648   0.0  0.1 408349040  12032   ??  S    10:01PM   0:00.18 /System/Library/PrivateFrameworks/GeoServi\
+alenaarovikova   69647   0.0  0.1 408234320  10032   ??  S    10:01PM   0:00.06 /usr/libexec/neagent\
+alenaarovikova   69645   0.0  0.1 408264624   9008   ??  S    10:01PM   0:00.08 /System/Library/PrivateFrameworks/IMDPersi\
+alenaarovikova   69644   0.0  0.2 408236864  14064   ??  S    10:01PM   0:00.12 /usr/libexec/linkd\
+alenaarovikova   69643   0.0  0.3 408383312  22368   ??  S    10:01PM   0:00.36 /System/Library/PrivateFrameworks/VoiceSho\
+alenaarovikova   69642   0.0  0.3 408244208  23872   ??  S    10:01PM   0:00.45 /System/Library/PrivateFrameworks/DoNotDis\
+_ctkd            69641   0.0  0.0 408197280   2448   ??  Ss   10:01PM   0:00.04 /System/Library/Frameworks/CryptoTokenKit.\
+alenaarovikova   69640   0.0  0.1 408235024  11792   ??  S    10:01PM   0:00.14 /usr/libexec/pkd\
+alenaarovikova   69639   0.0  0.1 408234768   6816   ??  S    10:01PM   0:00.07 /System/Library/Frameworks/CryptoTokenKit.\
+alenaarovikova   69638   0.0  0.1 408197344  10256   ??  Ss   10:01PM   0:00.18 /System/Library/PrivateFrameworks/IDSBlast\
+alenaarovikova   69637   0.0  0.1 408236208   7536   ??  S    10:01PM   0:00.29 /usr/libexec/biomesyncd\
+root             69635   0.0  0.1 408227584   5856   ??  Ss   10:01PM   0:02.09 /System/Library/Frameworks/AudioToolbox.fr\
+alenaarovikova   69634   0.0  0.1 408227360   7792   ??  S    10:01PM   0:00.06 /System/Library/PrivateFrameworks/UsageTra\
+alenaarovikova   69632   0.0  0.2 408213248  17024   ??  S    10:01PM   0:00.15 /System/Library/Frameworks/CoreServices.fr\
+root             69624   0.0  0.1 408272448   4720   ??  Ss   10:00PM   0:01.77 /System/Library/PrivateFrameworks/AppleNeu\
+alenaarovikova   69622   0.0  0.1 408323504  10768   ??  S    10:00PM   0:00.49 /usr/libexec/naturallanguaged\
+alenaarovikova   69597   0.0  0.0 408230688   3200   ??  Ss    9:59PM   0:00.03 /System/Library/Frameworks/ImageIO.framewo\
+alenaarovikova   69592   0.0  0.2 408255184  14144   ??  S     9:59PM   0:00.66 /System/Library/PrivateFrameworks/Calendar\
+alenaarovikova   69583   0.0  0.1 408372304   7088   ??  S     9:59PM   0:00.11 /System/Library/PrivateFrameworks/ContextK\
+root             69580   0.0  0.1 408204272   8880   ??  Ss    9:59PM   0:00.12 /usr/libexec/wifip2pd\
+alenaarovikova   69579   0.0  0.3 408235984  28752   ??  S     9:59PM   0:01.00 /System/Library/Frameworks/Contacts.framew\
+alenaarovikova   69577   0.0  0.1 408228528   4800   ??  S     9:59PM   0:00.07 /System/Library/CoreServices/ScopedBookmar\
+alenaarovikova   69578   0.0  0.2 408465184  19280   ??  S     9:59PM   0:02.13 /System/Library/PrivateFrameworks/CoreSugg\
+root             69563   0.0  0.0 408057936   1552   ??  Ss    9:59PM   0:00.02 /usr/libexec/online-authd\
+root             69561   0.0  0.1 408227568   6256   ??  Ss    9:59PM   0:00.11 /usr/libexec/nehelper\
+alenaarovikova   69546   0.0  0.2 408268992  13600   ??  S     9:58PM   0:00.77 /System/Library/CoreServices/UniversalCont\
+root             69543   0.0  0.1 408125696   4640   ??  Ss    9:58PM   0:00.03 /usr/libexec/sandboxd\
+alenaarovikova   69542   0.0  0.1 408516352   5248   ??  S     9:58PM   0:00.05 /usr/libexec/SidecarRelay\
+root             69523   0.0  0.2 408227344  12672   ??  Ss    9:57PM   0:00.08 /System/Library/Frameworks/CoreMediaIO.fra\
+alenaarovikova   69400   0.0  0.2 408312848  18816   ??  Ss    9:53PM   0:00.18 /System/Library/PrivateFrameworks/Lookup.f\
+alenaarovikova   69365   0.0  0.1 409527168  10832   ??  S     9:49PM   0:00.68 /Applications/Utilities/Adobe Creative Clo\
+alenaarovikova   69211   0.0  0.1 409118912  11824   ??  S     9:42PM   0:00.13 /System/Library/CoreServices/CoreServicesU\
+alenaarovikova   69210   0.0  0.1 408285312   8528   ??  S     9:42PM   0:00.20 /System/Library/Frameworks/ApplicationServ\
+alenaarovikova   69108   0.0  0.1 497568768  11040   ??  Ss    9:39PM   0:00.26 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   69097   0.0  0.2 498539760  18768   ??  Ss    9:38PM   0:10.17 /System/Library/Frameworks/WebKit.framewor\
+root             68857   0.0  0.1 408229808   8016   ??  Ss    9:32PM   0:00.32 /usr/libexec/rtcreportingd\
+alenaarovikova   68856   0.0  0.1 408258608   8064   ??  S     9:32PM   0:00.13 /System/Library/PrivateFrameworks/AssetCac\
+root             68809   0.0  0.1 408264656   6128   ??  Ss    9:30PM   0:00.09 /usr/libexec/biometrickitd --launchd\
+alenaarovikova   68787   0.0  0.1 408227776   8640   ??  S     9:29PM   0:00.15 /System/Library/PrivateFrameworks/PhotoLib\
+alenaarovikova   68785   0.0  0.1 408316560  11024   ??  S     9:28PM   0:00.52 /System/Library/CoreServices/TextInputSwit\
+alenaarovikova   68749   0.0  0.2 408400144  13008   ??  S     9:28PM   0:00.30 /System/Library/CoreServices/CoreLocationA\
+alenaarovikova   68713   0.0  0.1 408293696  12240   ??  S     9:28PM   0:00.32 /System/Library/CoreServices/Keychain Circ\
+alenaarovikova   67837   0.0  0.1 408312048   8400   ??  Ss    8:50PM   0:00.30 /Applications/Utilities/Adobe Sync/CoreSyn\
+alenaarovikova   67761   0.0  0.1 408310000   8352   ??  Ss    8:46PM   0:00.28 /Applications/Utilities/Adobe Sync/CoreSyn\
+alenaarovikova   67760   0.0  0.1 408744080  10032   ??  Ss    8:46PM   0:00.36 /System/Library/Frameworks/QuickLookUI.fra\
+alenaarovikova   67755   0.0  0.3 498872560  25824   ??  Ss    8:46PM   0:37.00 /System/Library/Frameworks/WebKit.framewor\
+alenaarovikova   67727   0.0  0.1 408743056  10032   ??  Ss    8:46PM   0:00.40 /System/Library/Frameworks/QuickLookUI.fra\
+alenaarovikova   66675   0.0  0.3 410114880  26640   ??  S     8:09PM   0:21.49 /System/Applications/Notes.app/Contents/Ma\
+alenaarovikova   66584   0.0  0.2 1585154480  13104   ??  S     8:01PM   0:01.89 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   66278   0.0  0.0 408686976   3632   ??  S<    7:47PM   0:00.04 /Applications/Visual Studio Code.app/Conte\
+alenaarovikova   66264   0.0  0.1 408311024   8192   ??  Ss    7:46PM   0:00.44 /Applications/Utilities/Adobe Sync/CoreSyn\
+alenaarovikova   66263   0.0  0.1 408744080   9648   ??  Ss    7:46PM   0:00.62 /System/Library/Frameworks/QuickLookUI.fra\
+
+\f0\b 13) \uc0\u1059 \u1073 \u1077 \u1081 \u1090 \u1077  \u1087 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089  666 \u1074  \u1082 \u1086 \u1085 \u1089 \u1086 \u1083 \u1080 
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ kill 666\
+bash: kill: (666) - No such process\
+
+\f0\b 14) \uc0\u1059 \u1079 \u1085 \u1072 \u1081 \u1090 \u1077  \u1076 \u1086 \u1089 \u1090 \u1091 \u1087 \u1085 \u1086 \u1089 \u1090 \u1100  \u1088 \u1077 \u1089 \u1091 \u1088 \u1089 \u1072  artsiomrusau.com, \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  ping
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ ping artsiomrusau.com\
+PING artsiomrusau.com (185.215.4.92): 56 data bytes\
+Request timeout for icmp_seq 0\
+Request timeout for icmp_seq 1\
+Request timeout for icmp_seq 2\
+Request timeout for icmp_seq 3\
+Request timeout for icmp_seq 4\
+Request timeout for icmp_seq 5\
+Request timeout for icmp_seq 6\
+Request timeout for icmp_seq 7\
+Request timeout for icmp_seq 8\
+Request timeout for icmp_seq 9\
+Request timeout for icmp_seq 10\
+Request timeout for icmp_seq 11\
+Request timeout for icmp_seq 12\
+Request timeout for icmp_seq 13\
+Request timeout for icmp_seq 14\
+
+\f0\b 15) \uc0\u1054 \u1090 \u1087 \u1088 \u1072 \u1074 \u1100 \u1090 \u1077  5 \u1087 \u1072 \u1082 \u1077 \u1090 \u1086 \u1074  \u1085 \u1072  \u1089 \u1072 \u1081 \u1090  artsiomrusau.com
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ ping -c 5 artsiomrusau.com\
+PING artsiomrusau.com (185.215.4.92): 56 data bytes\
+Request timeout for icmp_seq 0\
+Request timeout for icmp_seq 1\
+Request timeout for icmp_seq 2\
+Request timeout for icmp_seq 3\
+\
+--- artsiomrusau.com ping statistics ---\
+5 packets transmitted, 0 packets received, 100.0% packet loss\
+
+\f0\b 16) \uc0\u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  GET \u1080  \u1082 \u1086 \u1084 \u1072 \u1085 \u1076 \u1091  curl, \u1087 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1077  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102  \u1086  \u1079 \u1072 \u1088 \u1077 \u1075 \u1080 \u1089 \u1090 \u1088 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1099 \u1093  \u1087 \u1080 \u1090 \u1086 \u1084 \u1094 \u1072 \u1093  \u1085 \u1072  https://petstore.swagger.io/
+\f1\b0 \
+Alenas-Air:test3 alenaarovikova$ curl https://petstore.swagger.io/v2/pet/findByStatus?status=available\
+[\{"id":191,"name":"A","photoUrls":[],"tags":[],"status":"available"\},\{"id":9223372036854599834,"category":\{"id":0,"name":"Sobaka"\},"name":"Vla","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":291,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":947,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":9223372036854599838,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599839,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":7653,"category":\{"id":1,"name":"crazycats"\},"name":"buka","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":616982,"category":\{"id":171223,"name":"doggie"\},"name":"CJ","photoUrls":["string"],"tags":[\{"id":2908,"name":"sheltie"\}],"status":"available"\},\{"id":753,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":9222968140491042131,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599847,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599848,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599854,"category":\{"id":0,"name":"string"\},"name":"Puff","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599855,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599856,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":689,"category":\{"id":662,"name":"\{\{randomNoun\}\}"\},"name":"fuchsia","photoUrls":["https://tiffany.net","http://leonor.biz","https://stanford.net"],"tags":[\{"id":913,"name":"bus"\},\{"id":67,"name":"program"\}],"status":"available"\},\{"id":9223372036854599865,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599872,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599873,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599874,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":294,"category":\{"id":479,"name":"\{\{randomNoun\}\}"\},"name":"black","photoUrls":["http://joan.net","http://elwyn.biz","https://joel.com"],"tags":[\{"id":447,"name":"microchip"\},\{"id":622,"name":"port"\}],"status":"available"\},\{"id":9222968140497180179,"category":\{"id":0,"name":"string"\},"name":"test","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":38,"category":\{"id":481,"name":"\{\{randomNoun\}\}"\},"name":"orchid","photoUrls":["https://kayden.info","https://marcia.org","http://marcelle.biz"],"tags":[\{"id":498,"name":"firewall"\},\{"id":887,"name":"array"\}],"status":"available"\},\{"id":66,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":343,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":8090650,"category":\{"id":-1099841,"name":"exercitatio"\},"name":"doggie","photoUrls":["non anim commodo","et sint Duis"],"tags":[\{"id":-17708388,"name":"adipisicing"\},\{"id":-65777604,"name":"magna cillum Ex"\}],"status":"available"\},\{"id":42676290,"category":\{"id":-79249308,"name":"dolore commodo occaecat q"\},"name":"doggie","photoUrls":["enim dolore","ad cillum dolore occaecat"],"tags":[\{"id":-712768,"name":"dolore eiusmod"\},\{"id":38107720,"name":"enim mollit"\}],"status":"available"\},\{"id":58887966,"category":\{"id":-19546612,"name":"eu sunt sit ullamco"\},"name":"doggie","photoUrls":["ea aute enim","ex enim in"],"tags":[\{"id":62380181,"name":"et esse"\},\{"id":-41177397,"name":"ullamco non officia"\}],"status":"available"\},\{"id":9223372036854599914,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599916,"category":\{"id":98332237,"name":"ex aliqua"\},"name":"doggie","photoUrls":["ut en","amet proident eiusmod consectetur"],"tags":[\{"id":757076,"name":"non ullamco elit"\},\{"id":-55202171,"name":"ex labore culpa"\}],"status":"available"\},\{"id":9223372036854599918,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599920,"category":\{"id":0,"name":"string"\},"name":"Puff","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599925,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599926,"category":\{"id":0,"name":"Ovcharka"\},"name":"Patron","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599931,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599932,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599934,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599937,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599941,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599942,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":279,"category":\{"id":2,"name":"Dogs"\},"name":"","photoUrls":["photoUrl for pet"],"tags":[\{"id":10,"name":"tag name"\}],"status":"available"\},\{"id":420,"category":\{"id":42,"name":"Chihuahua"\},"name":"PasBre","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":857547,"category":\{"id":0,"name":"Buldog"\},"name":"finoNew","photoUrls":["string"],"tags":[\{"id":0,"name":"the best dog"\}],"status":"available"\},\{"id":9223372036854599949,"category":\{"id":-76924629,"name":"et exercitation dolor ut"\},"name":"Candy","photoUrls":["culpa mollit aliqua","esse nulla laboris Lorem non"],"tags":[\{"id":-38751365,"name":"tempor cupidatat ad eiusmod"\},\{"id":48919856,"name":"tempor est"\}],"status":"available"\},\{"id":9223372036854599951,"category":\{"id":0,"name":"string"\},"name":"fish","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":2,"category":\{"id":1232,"name":"555"\},"name":"CatTest","photoUrls":[],"tags":[\{"id":2,"name":"54"\}],"status":"available"\},\{"id":89012937,"category":\{"id":-27522541,"name":"voluptate laborum elit ex"\},"name":"doggie","photoUrls":["anim in occaecat dolore Excepteur","ut minim dolor pariatur"],"tags":[\{"id":-59197242,"name":"sint Excepteur in"\},\{"id":-11301750,"name":"pariatur"\}],"status":"available"\},\{"id":44403346,"category":\{"id":-7356342,"name":"qui dolor"\},"name":"doggie","photoUrls":["dolore mollit dolo","qui in laborum "],"tags":[\{"id":29212366,"name":"ullamc"\},\{"id":68937462,"name":"et in sit"\}],"status":"available"\},\{"id":6089,"category":\{"id":6089,"name":"nemo 1"\},"name":"fishs","photoUrls":["https://w.forfun.com/fetch/ec/ec21683f58319755608a051e2a73c659.jpeg"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":9223372036854599955,"category":\{"id":0,"name":"string"\},"name":"doggie","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":2334563,"category":\{"id":2,"name":"dog"\},"name":"doggie-yoggie","photoUrls":[],"tags":[],"status":"available"\},\{"id":112233,"category":\{"id":30,"name":"Eq-dog"\},"name":"Postman","photoUrls":["URLLink"],"tags":[\{"id":10,"name":"Doberman"\}],"status":"available"\},\{"id":424,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":9223372036854599963,"category":\{"id":95987592,"name":"Lorem in anim voluptate"\},"name":"doggie","photoUrls":["nostrud nisi dolor exe","id fugiat eu sint"],"tags":[\{"id":-78106478,"name":"eu"\},\{"id":-94151591,"name":"ad ullamco"\}],"status":"available"\},\{"id":9223372036854599967,"category":\{"id":9223372036854775807,"name":"string"\},"name":"doggie2711","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":99672469,"category":\{"id":-72804219,"name":"velit occaecat enim"\},"name":"doggie","photoUrls":["reprehenderit culpa","sit labore consectetur i"],"tags":[\{"id":89701623,"name":"aute"\},\{"id":-17583688,"name":"sed Duis Excepteur "\}],"status":"available"\},\{"id":70586304,"category":\{"id":22059979,"name":"fish"\},"name":"nemo","photoUrls":["tempor laboris","https://klev26.ru/wp-content/uploads/b/d/4/bd40f13a82154aa08445aee40cf1186d.jpeg"],"tags":[\{"id":-16259777,"name":"qui veniam fugia"\},\{"id":16047041,"name":"Duis ex ut"\}],"status":"available"\},\{"id":70586304435,"category":\{"id":22059979,"name":"fishs"\},"name":"nemo fish","photoUrls":["tempor laboris","https://klev26.ru/wp-content/uploads/b/d/4/bd40f13a82154aa08445aee40cf1186d.jpeg"],"tags":[\{"id":-16259777,"name":"qui veniam fugia"\},\{"id":16047041,"name":"Duis ex ut"\}],"status":"available"\},\{"id":611,"category":\{"id":0,"name":"zurafaa"\},"name":"zurafaa","photoUrls":["string"],"tags":[\{"id":0,"name":"string"\}],"status":"available"\},\{"id":455,"category":\{"id":54565654,"name":"fish"\},"name":"Nemo_fisher","photoUrls":["<string>","<string>"],"tags":[\{"id":575752,"name":"<string>"\},\{"id":5275275,"name":"<string>"\}],"status":"available"\},\{"id":44037029,"category":\{"id":55461079,"name":"\uc0\u1052 \u1091 \u1088 \u1082 \u1072 "\},"name":"\u1050 \u1086 \u1090 \u1080 \u1095 \u1082 \u1072 ","photoUrls":["consequat sint tempor","amet consequat labore"],"tags":[\{"id":31524971,"name":"minim ut nostrud"\},\{"id":-48012393,"name":"dolor sunt"\}],"status":"available"\},\{"id":60687598,"category":\{"id":75968968,"name":"irure repr"\},"name":"doggie","photoUrls":["cupidatat dolore tempor nostrud","do reprehende"],"tags":[\{"id":-69000706,"name":"ut consectetur tempor amet"\},\{"id":27016153,"name":"consequat"\}],"status":"available"\},\{"id":5786256,"category":\{"id":-44713072,"name":"reprehenderit irure"\},"name":"doggie","photoUrls":["ut nisi ea tempor","reprehenderit"],"tags":[\{"id":-18411144,"name":"aliqua reprehenderit"\},\{"id":86685319,"name":"minim reprehenderit laboris c"\}],"status":"available"\},\{"id":80,"category":\{"id":10,"name":"\u1056 \u1099 \u1073 \u1072 "\},"name":"\u1044 \u1088 \u1091 \u1078 \u1086 \u1082 ","photoUrls":["esse Ut elit","sint magna"],"tags":[\{"id":-36555706,"name":"voluptate dolor nulla labore"\},\{"id":3842154,"name":"deserunt "\}],"status":"available"\},\{"id":12222,"category":\{"id":0,"name":"string"\},"name":"Elvice Catsley","photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\},\{"id":4,"category":\{"id":0,"name":"string"\},"photoUrls":["string"],"tags":[\{"id":1122,"name":"Cat"\}],"status":"available"\}]Alenas-Air:test3 alenaarovikova$ \
+
+\f0\b 17) \uc0\u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  POST \u1080  \u1082 \u1086 \u1084 \u1072 \u1085 \u1076 \u1091  curl, \u1089 \u1086 \u1079 \u1076 \u1072 \u1081 \u1090 \u1077  \u1085 \u1086 \u1074 \u1086 \u1075 \u1086  \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1077 \u1083 \u1103  \u1085 \u1072  https://petstore.swagger.io/
+\f1\b0 \
+\{"code":400,"type":"unknown","message":"bad input"\}Alenas-Air:~ alenaarovikova$ curl -X POST -H "Content-Type: application/json" -d '\{"id": 0, "username": "mp "email": "test@test.com", "password": "12345", "phone": "1234567890", "userStatus": "0"\}' https://petstore.swagger.io/v2/user\
+\{"code":200,"type":"unknown","message":"9223372036854775807"\}Alenas-Air:~ alenaarovikova$ }
