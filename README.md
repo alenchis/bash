@@ -6,5 +6,5 @@ I want to share some bash commands that I used to do tasks during my Quality Ass
 
 Attached files:
 
-- Working with files and directories - #bash-1
-- Editing files, checking and killing proccesses, working with websites - #bash-2
+- Working with files and directories - #bash1
+- Editing files, checking and killing proccesses, working with websites - #bash2
